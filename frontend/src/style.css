@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@layer theme {
+  :root {
+    --color-background: #111827; /* gray-900 */
+    --color-text: #f3f4f6; /* gray-100 */
+  }
+}
+
+/* Reset basics to ensure full screen usage */
+html, body, #app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
