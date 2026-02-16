@@ -20,7 +20,7 @@ const userId = localStorage.getItem('user_id');
 const showManualModal = ref(false);
 const manualDate = ref('');
 const manualTime = ref('');
-const manualTimeOut = ref(''); // New State but we need to check if it's defined in the script section properly
+const manualTimeOut = ref('');
 
 // Edit Log State
 const showEditModal = ref(false);
@@ -149,7 +149,7 @@ const openEditModal = (log: any) => {
     editData.value = {
         id: log.id,
         date: log.date,
-        time_in: log.time_in, // Keep full datetime for simplicity or split if needed
+        time_in: log.time_in,
         time_out: log.time_out,
         remarks: log.remarks
     };
